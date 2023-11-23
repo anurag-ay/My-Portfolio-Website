@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Anurag_Resume_L.pdf";
+import pdf from "../../Assets/../Assets/Anurag_Resume_PortFolio.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://raw.githubusercontent.com/anurag-ay/My-Portfolio-Website/master/src/Assets/Anurag_Resume_L.pdf";
+  "https://raw.githubusercontent.com/anurag-ay/My-Portfolio-Website/master/src/Assets/Anurag_Resume_PortFolio.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
